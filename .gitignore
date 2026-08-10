@@ -67,3 +67,16 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+# VS 缓存文件
+.vs/
+*.ipch
+*.sdf
+*.sqlite
+
+# 编译生成程序
+*.exe
+main.exe
+test.exe
+
+# VSCode 配置
+.vscode/
