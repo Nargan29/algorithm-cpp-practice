@@ -9,15 +9,14 @@ int main()
     for(int i=0;i<n;i++) cin>>a[i];
     for(int j=0;j<m;j++) cin>>b[j];
 
-    int j=0;
-    for(int i=0;i<n;i++)
+    int j=0,i=0;
+    while(i<n&&j<m)
     {
-        if(a[i]==b[j]) i++;j++;
-        while(j<m&&b[j]!=a[i]) j++;
-        
+        if(a[i]==b[j]) i++;
+        j++;
     }
-    if(a[n-1]==b[j]) cout<<"Y";
-    else cout<<"N";
-        return 0;
+    if(i==n) cout<<"Yes"<<endl;
+    else cout<<"No"<<endl;
+    
 
 }
